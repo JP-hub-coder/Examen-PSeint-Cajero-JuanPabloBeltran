@@ -10,7 +10,7 @@ Funcion MenuPrincipal (Saldo Por Referencia)
 	Imprimir "=========================|"
 	Imprimir "========BIENVENIDO=======|"
 	Imprimir "=========================|"
-	Escribir " ¿que desea hacer hoy?   |"
+	Escribir " Â¿Que desea hacer hoy?   |"
 	Imprimir "-------------------------|"
 	Escribir "1.       Consultar Saldo |"
 	Escribir "2.       Depositar Dinero|"
@@ -50,7 +50,7 @@ Funcion consultarsaldo (Saldo Por Referencia)
 	
 	Limpiar Pantalla
 	Imprimir "=========================================|"
-	Imprimir "su saldo actual es de: $", Saldo, " pesos|"
+	Imprimir "Su saldo actual es de: $", Saldo, " pesos|"
 	Imprimir "=========================================|"
 	si Saldo <= 0 Entonces
 		Imprimir "Su cuenta esta en ceros"
@@ -67,9 +67,9 @@ FinFuncion
 
 Funcion DepositarDinero (Saldo Por Referencia)
 	Imprimir "==========================================|"
-	Imprimir "su saldo actual es de: $", Saldo, " pesos |"
+	Imprimir "Su saldo actual es de: $", Saldo, " pesos |"
 	Imprimir "==========================================|"
-	Escribir "     ¿Cuanto dinero desea depositar?      "
+	Escribir "     Â¿Cuanto dinero desea depositar?      "
 	Imprimir "     (Valor max: 12 millones)             "
 	leer MontoDeposito
 	
@@ -80,7 +80,7 @@ Funcion DepositarDinero (Saldo Por Referencia)
 	SiNo
 		Saldo=Saldo+MontoDeposito 
 		Imprimir "==============================|"
-		Imprimir "valor depositado correctamente|"
+		Imprimir "Valor depositado correctamente|"
 		Imprimir "==============================|"
 		Imprimir "Saldo actual: $", Saldo, " pesos"
 		Imprimir "Volviendo..."
@@ -93,9 +93,9 @@ FinFuncion
 Funcion RetirarDinero (Saldo Por Referencia)
 	
 	Imprimir "==========================================|"
-	Imprimir "su saldo actual es de: $", Saldo, " pesos |"
+	Imprimir "Su saldo actual es de: $", Saldo, " pesos |"
 	Imprimir "==========================================|"
-	Imprimir "          ¿Cuanto desea retirar?          |"
+	Imprimir "          Â¿Cuanto desea retirar?          |"
 	Leer montoretiro
 	
 	si montoretiro <= 0 o montoretiro > Saldo Entonces
@@ -107,7 +107,7 @@ Funcion RetirarDinero (Saldo Por Referencia)
 		Imprimir "==========================================|"
 		Imprimir "      Dinero retirado correctamente       |"
 		Imprimir "==========================================|" 
-		Imprimir "su saldo actual es de: $", Saldo, " pesos |"
+		Imprimir "Su saldo actual es de: $", Saldo, " pesos |"
 		Imprimir "Volviendo al inicio..."
 		Esperar 4 Segundos
 	FinSi
